@@ -323,17 +323,7 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>  
 	<script src="http://d23cj0cdvyoxg0.cloudfront.net/xivelyjs-1.0.4.min.js"></script> 
 	
-	<script>
-		xively.setKey("if6ZLeJpOxSsrEwIeXZduhFOapgq19NH1dUth6bBp0o0e7pF");
-		xively.datastream.list(
-    			916945674               //id from the tutorial example
-		, function (data) {
-    			data.forEach(function (datastream) {
-        		document.write("<br><br>Datastream ID:"+JSON.stringify(datastream["id"]));
-			document.write("<br><br>Current value:"+JSON.stringify(datastream["current_value"], null, 4));
-    							});
-					});
-	</script>
+	
 	// Make sure the document is ready to be handled  
 	$(document).ready(function($) {  
 	  
